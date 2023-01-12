@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CategoryForm from './CategoryForm'
-import UploadImage from './image.model'
+//import UploadImage from './image.model'
 
 const Admin = (category) => {
   return (

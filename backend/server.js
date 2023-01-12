@@ -9,7 +9,7 @@ const multer  = require('multer')
 const app = express();
 
 //image uploading
-const ImageModel = require ('../frontend/src/components/image.model')
+const ImageModel = require ('./models/image.model.js')
 
 //Storege 
 const Storege = multer.diskStorage({
@@ -18,12 +18,14 @@ const Storege = multer.diskStorage({
     cb(null, file.originalname)
   }
 })
+
 const upload = multer({
   storage:Storege
 }).single('testImage')
 app.get("/", (req,res)=>{
   res.send("upload file")
 })
+
 app.post('/upload', (req, res)=>{
   upload(req,res,(err)=>{
     if(err){

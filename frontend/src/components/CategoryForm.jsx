@@ -61,18 +61,18 @@ const CategoryForm = () => {
         {error && <div className="error">{error}</div>}
       </form>
       <form action="/profile" method="post" enctype="multipart/form-data">
-      <h3>Upload Images here</h3>
-      <div className="input-group">
-      <input type="file" name="avatar" />
-        <input
-          className="btn btn-outline-secondary"
-          type="submit"
-          id="inputGroupFileAddon04"
-        >
-          Button
-        </input>
-      </div>
-    </form>
+        <h3>Upload Images here</h3>
+        <div className="input-group">
+          <input type="file" name="avatar" />
+          <input
+            className="btn btn-outline-secondary"
+            type="submit"
+            id="inputGroupFileAddon04"
+          >
+            Button
+          </input>
+        </div>
+      </form>
     </div>
   );
 };

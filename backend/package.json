@@ -16,5 +16,8 @@
     "mongoose": "^6.8.3",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.20"
+  }, 
+  "devDependencies": {
+    "mongodb-memory-server":"8.11.0"
   }
 }
